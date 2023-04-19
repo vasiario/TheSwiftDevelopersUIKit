@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct Model {
+class Model: UIView {
 
 static let model = Model()
     
