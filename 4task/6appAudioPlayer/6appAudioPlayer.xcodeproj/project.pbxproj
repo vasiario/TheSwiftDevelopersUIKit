@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		096ECDD029F4F91200BB9B9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096ECDCF29F4F91200BB9B9C /* AppDelegate.swift */; };
+		096ECDD229F4F91200BB9B9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096ECDD129F4F91200BB9B9C /* SceneDelegate.swift */; };
+		096ECDD429F4F91200BB9B9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096ECDD329F4F91200BB9B9C /* ViewController.swift */; };
+		096ECDD729F4F91200BB9B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096ECDD529F4F91200BB9B9C /* Main.storyboard */; };
+		096ECDD929F4F91300BB9B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096ECDD829F4F91300BB9B9C /* Assets.xcassets */; };
+		096ECDDC29F4F91300BB9B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096ECDDA29F4F91300BB9B9C /* LaunchScreen.storyboard */; };
+		096ECDE829F5051500BB9B9C /* IC3PEAK - Все равно.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 096ECDE629F5051500BB9B9C /* IC3PEAK - Все равно.mp3 */; };
+		096ECDE929F5051500BB9B9C /* IC3PEAK - Сказка.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 096ECDE729F5051500BB9B9C /* IC3PEAK - Сказка.mp3 */; };
+		096ECDEB29F5099D00BB9B9C /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096ECDEA29F5099D00BB9B9C /* PlayerViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		096ECDCC29F4F91200BB9B9C /* 6appAudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6appAudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		096ECDCF29F4F91200BB9B9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		096ECDD129F4F91200BB9B9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		096ECDD329F4F91200BB9B9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		096ECDD629F4F91200BB9B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		096ECDD829F4F91300BB9B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		096ECDDB29F4F91300BB9B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		096ECDDD29F4F91300BB9B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096ECDE629F5051500BB9B9C /* IC3PEAK - Все равно.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "IC3PEAK - Все равно.mp3"; path = "6appAudioPlayer/IC3PEAK - Все равно.mp3"; sourceTree = SOURCE_ROOT; };
+		096ECDE729F5051500BB9B9C /* IC3PEAK - Сказка.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "IC3PEAK - Сказка.mp3"; path = "6appAudioPlayer/IC3PEAK - Сказка.mp3"; sourceTree = SOURCE_ROOT; };
+		096ECDEA29F5099D00BB9B9C /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		096ECDC929F4F91200BB9B9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		096ECDC329F4F91200BB9B9C = {
+			isa = PBXGroup;
+			children = (
+				096ECDCE29F4F91200BB9B9C /* 6appAudioPlayer */,
+				096ECDCD29F4F91200BB9B9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		096ECDCD29F4F91200BB9B9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				096ECDCC29F4F91200BB9B9C /* 6appAudioPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		096ECDCE29F4F91200BB9B9C /* 6appAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				096ECDE529F5050600BB9B9C /* Music */,
+				096ECDE329F4F94500BB9B9C /* Views */,
+				096ECDE429F4F95000BB9B9C /* Base */,
+				096ECDCF29F4F91200BB9B9C /* AppDelegate.swift */,
+				096ECDD129F4F91200BB9B9C /* SceneDelegate.swift */,
+				096ECDD829F4F91300BB9B9C /* Assets.xcassets */,
+				096ECDDD29F4F91300BB9B9C /* Info.plist */,
+			);
+			path = 6appAudioPlayer;
+			sourceTree = "<group>";
+		};
+		096ECDE329F4F94500BB9B9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				096ECDD329F4F91200BB9B9C /* ViewController.swift */,
+				096ECDEA29F5099D00BB9B9C /* PlayerViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		096ECDE429F4F95000BB9B9C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				096ECDD529F4F91200BB9B9C /* Main.storyboard */,
+				096ECDDA29F4F91300BB9B9C /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		096ECDE529F5050600BB9B9C /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				096ECDE629F5051500BB9B9C /* IC3PEAK - Все равно.mp3 */,
+				096ECDE729F5051500BB9B9C /* IC3PEAK - Сказка.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		096ECDCB29F4F91200BB9B9C /* 6appAudioPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 096ECDE029F4F91300BB9B9C /* Build configuration list for PBXNativeTarget "6appAudioPlayer" */;
+			buildPhases = (
+				096ECDC829F4F91200BB9B9C /* Sources */,
+				096ECDC929F4F91200BB9B9C /* Frameworks */,
+				096ECDCA29F4F91200BB9B9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 6appAudioPlayer;
+			productName = 6appAudioPlayer;
+			productReference = 096ECDCC29F4F91200BB9B9C /* 6appAudioPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		096ECDC429F4F91200BB9B9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					096ECDCB29F4F91200BB9B9C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 096ECDC729F4F91200BB9B9C /* Build configuration list for PBXProject "6appAudioPlayer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 096ECDC329F4F91200BB9B9C;
+			productRefGroup = 096ECDCD29F4F91200BB9B9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				096ECDCB29F4F91200BB9B9C /* 6appAudioPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		096ECDCA29F4F91200BB9B9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096ECDDC29F4F91300BB9B9C /* LaunchScreen.storyboard in Resources */,
+				096ECDE929F5051500BB9B9C /* IC3PEAK - Сказка.mp3 in Resources */,
+				096ECDD929F4F91300BB9B9C /* Assets.xcassets in Resources */,
+				096ECDD729F4F91200BB9B9C /* Main.storyboard in Resources */,
+				096ECDE829F5051500BB9B9C /* IC3PEAK - Все равно.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		096ECDC829F4F91200BB9B9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096ECDD429F4F91200BB9B9C /* ViewController.swift in Sources */,
+				096ECDEB29F5099D00BB9B9C /* PlayerViewController.swift in Sources */,
+				096ECDD029F4F91200BB9B9C /* AppDelegate.swift in Sources */,
+				096ECDD229F4F91200BB9B9C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		096ECDD529F4F91200BB9B9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096ECDD629F4F91200BB9B9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		096ECDDA29F4F91300BB9B9C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096ECDDB29F4F91300BB9B9C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		096ECDDE29F4F91300BB9B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		096ECDDF29F4F91300BB9B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		096ECDE129F4F91300BB9B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WFX9Z8Q7WY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 6appAudioPlayer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-appAudioPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		096ECDE229F4F91300BB9B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WFX9Z8Q7WY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 6appAudioPlayer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.-appAudioPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		096ECDC729F4F91200BB9B9C /* Build configuration list for PBXProject "6appAudioPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096ECDDE29F4F91300BB9B9C /* Debug */,
+				096ECDDF29F4F91300BB9B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		096ECDE029F4F91300BB9B9C /* Build configuration list for PBXNativeTarget "6appAudioPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096ECDE129F4F91300BB9B9C /* Debug */,
+				096ECDE229F4F91300BB9B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 096ECDC429F4F91200BB9B9C /* Project object */;
+}
