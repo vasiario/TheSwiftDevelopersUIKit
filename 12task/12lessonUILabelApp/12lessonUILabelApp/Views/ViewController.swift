@@ -52,8 +52,9 @@ class ViewController: UIViewController {
     
     //addCentralLabel
     func addCentralLabel() {
-        let labelFrame = CGRect(x: 10, y: 100, width: 370, height: 100)
+        let labelFrame = CGRect(x: 0, y: 0, width: 370, height: 100)
         centralLabel.frame = labelFrame
+        centralLabel.center = view.center
         centralLabel.text = "Нажмите на + и введите текст"
         centralLabel.lineBreakMode = .byWordWrapping
         centralLabel.numberOfLines = 0
@@ -86,6 +87,7 @@ class ViewController: UIViewController {
     func addPickerColor() {
         pickerColor = UIPickerView(frame: CGRect(x: 10, y: 650, width: 170, height: 100.0))
         view.addSubview(pickerColor)
+        pickerColor.tag = 0
         
         pickerColor.delegate = self
         pickerColor.dataSource = self
@@ -94,7 +96,8 @@ class ViewController: UIViewController {
     //    addPickernumberOfLines
     func addPickernumberOfLines() {
         pickerNumberOfLines = UIPickerView(frame: CGRect(x: 200, y: 650, width: 170, height: 100.0))
-        view.addSubview(pickerColor)
+        view.addSubview(pickerNumberOfLines)
+        pickerNumberOfLines.tag = 1
         
         pickerNumberOfLines.delegate = self
         pickerNumberOfLines.dataSource = self
@@ -103,12 +106,20 @@ class ViewController: UIViewController {
 
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        let colorName = ColorName.allCases[row].rawValue
-        return colorName
+        if pickerView.tag == 0 {
+            let colorName = ColorName.allCases[row].rawValue
+            return colorName
+        } else {
+            return "\(row)"
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        return centralLabel.textColor = colors[row]
+        if pickerView.tag == 0 {
+            return centralLabel.textColor = colors[row]
+        } else {
+            return centralLabel.numberOfLines = row
+        }
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -116,7 +127,11 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return colors.count
+        if pickerView.tag == 0 {
+            return colors.count
+        } else {
+            return 10
+        }
     }
 }
 
