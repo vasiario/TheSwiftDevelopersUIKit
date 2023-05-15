@@ -7,11 +7,20 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+final class ThirdViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
+        setupNavigationBar()
     }
-
+    
+    func setupNavigationBar() {
+        let backButton = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(goBack))
+        navigationItem.leftBarButtonItem = backButton
+    }
+    
+    @objc func goBack() {
+        navigationController?.popViewController(animated: true)
+    }
 }

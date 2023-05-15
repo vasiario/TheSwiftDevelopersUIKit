@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+final class SecondViewController: UIViewController {
     
     var nameTextField = UITextField()
     var lastNameTextField = UITextField()
@@ -34,8 +34,6 @@ class SecondViewController: UIViewController {
         acceptButton.setTitleColor(.darkGray, for: .highlighted)
         acceptButton.addTarget(self, action: #selector(acceptButtonPressed), for: .touchUpInside)
         view.addSubview(acceptButton)
-        
-        
         
         //        MARK: - NotificationCenter
         NotificationCenter.default.addObserver(forName: UITextField.keyboardWillShowNotification, object: nil, queue: nil) { Notification in
@@ -95,8 +93,8 @@ class SecondViewController: UIViewController {
     @objc func acceptButtonPressed(target: UIButton) {
         if target == acceptButton {
             let thirdViewController = storyboard?.instantiateViewController(withIdentifier: "ThirdViewController")
-                thirdViewController?.modalPresentationStyle = .fullScreen
-                present(thirdViewController!, animated: true, completion: nil)
+            thirdViewController?.modalPresentationStyle = .fullScreen
+            present(thirdViewController!, animated: true, completion: nil)
         }
     }
 }
@@ -117,6 +115,11 @@ extension SecondViewController: UITextFieldDelegate {
         }
         if textField.tag == 3 {
             passwordTextField.resignFirstResponder()
+            
+            let alert = UIAlertController(title: nil, message: "Спасибо за регистрацию", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "продолжить", style: .default)
+            alert.addAction(alertAction)
+            present(alert, animated: true)
         }
         return true
     }
