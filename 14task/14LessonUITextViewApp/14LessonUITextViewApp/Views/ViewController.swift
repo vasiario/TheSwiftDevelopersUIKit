@@ -18,6 +18,11 @@ final class ViewController: UIViewController {
     private var blueColorTextButton = UIButton()
     private var segmentSMtextFont = UISegmentedControl()
     private var switchDarkWhiteTheme = UISwitch()
+    private var textFontPicker = UIPickerView()
+    private var shareTextButton = UIBarButtonItem()
+    private var activityViewController: UIActivityViewController? = nil
+    private let nameFont = ["Helvetica-Bold", "Arial-ItalicMT", "TimesNewRomanPS-BoldItalicMT", "CourierNewPSMT"]
+    private let arrayFont = [UIFont.init(name: "Helvetica-Bold", size: 17), UIFont.init(name: "Arial-ItalicMT", size: 17), UIFont.init(name: "TimesNewRomanPS-BoldItalicMT", size: 17), UIFont.init(name: "CourierNewPSMT", size: 17)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +41,8 @@ final class ViewController: UIViewController {
         addBlackColorTextButton()
         createSegmentedControl()
         addSwitchDarkWhiteTheme()
-        
+        addTextFontPicker()
+        addShareTextButton()
     }
     
     //    MARK: - Methods
@@ -130,6 +136,13 @@ final class ViewController: UIViewController {
         view.addSubview(segmentSMtextFont)
     }
     
+    func addTextFontPicker() {
+        textFontPicker.delegate = self
+        textFontPicker.dataSource = self
+        textFontPicker.frame = CGRect(x: 10, y: 854, width: 300, height: 50)
+        view.addSubview(textFontPicker)
+    }
+    
     @objc func segmentedControlValueChanged(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
@@ -181,5 +194,39 @@ final class ViewController: UIViewController {
             centralTextView.scrollIndicatorInsets = centralTextView.contentInset
         }
         centralTextView.scrollRangeToVisible(centralTextView.selectedRange)
+    }
+    
+    //MARK: - addShareTextButton
+    func addShareTextButton() {
+        shareTextButton.image = UIImage(systemName: "square.and.arrow.up")
+        shareTextButton.target = self
+        shareTextButton.action = #selector(shareTextAction)
+        navigationItem.rightBarButtonItem = shareTextButton
+    }
+    
+    @objc func shareTextAction() {
+        activityViewController = UIActivityViewController(activityItems: [centralTextView.text ?? "nil"], applicationActivities: nil)
+        present(activityViewController!, animated: true)
+    }
+}
+
+//MARK: - UIPickerViewDelegate, UIPickerViewDataSource
+extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        let result = "\(nameFont[row])"
+        return result
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        centralTextView.font = arrayFont[row]
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return nameFont.count
     }
 }
