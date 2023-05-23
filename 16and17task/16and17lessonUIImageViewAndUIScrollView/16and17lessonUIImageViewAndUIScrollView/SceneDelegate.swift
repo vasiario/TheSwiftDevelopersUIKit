@@ -34,7 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         searchViewController.tabBarItem = item3
         shoppingCartViewController.tabBarItem = item4
         
-        tabBarVC.selectedIndex = 2
+        tabBarVC.selectedIndex = 0
         
         let navController = UINavigationController(rootViewController: tabBarVC)
         

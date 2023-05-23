@@ -14,10 +14,6 @@ final class SearchViewController: UIViewController {
     var recentlyViewTextLabel = UILabel()
     var cleanButton = UIButton()
     var requesOptionsLabel = UILabel()
-    var searchedResultLabel1 = UILabel()
-    var searchedResultLabel2 = UILabel()
-    var searchedResultLabel3 = UILabel()
-    var searchedResultLabel4 = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +23,10 @@ final class SearchViewController: UIViewController {
         addRecentlyViewLabel()
         addCleanButton()
         addRequesOptionsLabel()
-        addSearchedResultLabel1()
-        addSearchedResultLabel2()
-        addSearchedResultLabel3()
-        addSearchedResultLabel4()
+        addSearchedResultLabel(index: 0, text: "AirPods Pro")
+        addSearchedResultLabel(index: 1, text: "Iphone 14 pro Max")
+        addSearchedResultLabel(index: 2, text: "Macbook Pro 2022 M2")
+        addSearchedResultLabel(index: 3, text: "Apple Watch 7")
     }
     
     // MARK: - Setup
@@ -89,10 +85,10 @@ final class SearchViewController: UIViewController {
     }
     
     //    MARK: - add Bottom Labels
-    fileprivate func addSearchedResultLabel1() {
-        searchedResultLabel1 = UILabel(frame: CGRect(x: 10, y: requesOptionsLabel.frame.minY + 50, width: 300, height: 30))
-        searchedResultLabel1.font = UIFont.systemFont(ofSize: 22)
-        searchedResultLabel1.textColor = .white
+    fileprivate func addSearchedResultLabel(index: Int, text: String) {
+        let label = UILabel(frame: CGRect(x: 10, y: requesOptionsLabel.frame.minY + CGFloat(50 * index + 50), width: view.bounds.width, height: 30))
+        label.font = UIFont.systemFont(ofSize: 22)
+        label.textColor = .white
         
         let imageAttachment = NSTextAttachment()
         imageAttachment.image = UIImage(systemName: "magnifyingglass")?.withTintColor(.systemGray)
@@ -103,73 +99,14 @@ final class SearchViewController: UIViewController {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
         labelText.append(imageString)
-        labelText.append(NSAttributedString(string: " AirPods Pro", attributes: [.paragraphStyle: paragraphStyle]))
+        labelText.append(NSAttributedString(string: text, attributes: [.paragraphStyle: paragraphStyle]))
+        label.attributedText = labelText
         
-        searchedResultLabel1.attributedText = labelText
+        let line = CALayer()
+        line.frame = CGRect(x: 0, y: label.frame.height + 5, width: label.frame.width, height: 1)
+        line.backgroundColor = UIColor.secondaryLabel.cgColor
+        label.layer.addSublayer(line)
         
-        view.addSubview(searchedResultLabel1)
-    }
-    
-    fileprivate func addSearchedResultLabel2() {
-        searchedResultLabel2 = UILabel(frame: CGRect(x: 10, y: requesOptionsLabel.frame.minY + 90, width: 300, height: 30))
-        searchedResultLabel2.font = UIFont.systemFont(ofSize: 22)
-        searchedResultLabel2.textColor = .white
-        
-        let imageAttachment = NSTextAttachment()
-        imageAttachment.image = UIImage(systemName: "magnifyingglass")?.withTintColor(.systemGray)
-        
-        let imageString = NSAttributedString(attachment: imageAttachment)
-        
-        let labelText = NSMutableAttributedString()
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = .center
-        labelText.append(imageString)
-        labelText.append(NSAttributedString(string: " Iphone 14 pro Max", attributes: [.paragraphStyle: paragraphStyle]))
-        
-        searchedResultLabel2.attributedText = labelText
-        
-        view.addSubview(searchedResultLabel2)
-    }
-    
-    fileprivate func addSearchedResultLabel3() {
-        searchedResultLabel3 = UILabel(frame: CGRect(x: 10, y: requesOptionsLabel.frame.minY + 130, width: 300, height: 30))
-        searchedResultLabel3.font = UIFont.systemFont(ofSize: 22)
-        searchedResultLabel3.textColor = .white
-        
-        let imageAttachment = NSTextAttachment()
-        imageAttachment.image = UIImage(systemName: "magnifyingglass")?.withTintColor(.systemGray)
-        
-        let imageString = NSAttributedString(attachment: imageAttachment)
-        
-        let labelText = NSMutableAttributedString()
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = .center
-        labelText.append(imageString)
-        labelText.append(NSAttributedString(string: " Macbook Pro 2022 M2", attributes: [.paragraphStyle: paragraphStyle]))
-        
-        searchedResultLabel3.attributedText = labelText
-        
-        view.addSubview(searchedResultLabel3)
-    }
-    
-    fileprivate func addSearchedResultLabel4() {
-        searchedResultLabel4 = UILabel(frame: CGRect(x: 10, y: requesOptionsLabel.frame.minY + 170, width: 300, height: 30))
-        searchedResultLabel4.font = UIFont.systemFont(ofSize: 22)
-        searchedResultLabel4.textColor = .white
-        
-        let imageAttachment = NSTextAttachment()
-        imageAttachment.image = UIImage(systemName: "magnifyingglass")?.withTintColor(.systemGray)
-        
-        let imageString = NSAttributedString(attachment: imageAttachment)
-        
-        let labelText = NSMutableAttributedString()
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = .center
-        labelText.append(imageString)
-        labelText.append(NSAttributedString(string: " Apple Watch 7", attributes: [.paragraphStyle: paragraphStyle]))
-        
-        searchedResultLabel4.attributedText = labelText
-        
-        view.addSubview(searchedResultLabel4)
+        view.addSubview(label)
     }
 }
