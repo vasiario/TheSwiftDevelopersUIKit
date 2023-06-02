@@ -36,7 +36,6 @@ final class SearchViewController: UIViewController, UIScrollViewDelegate {
         addSearchedResultLabel(index: 2, text: " Macbook Pro 2022 M2")
         addSearchedResultLabel(index: 3, text: " Apple Watch 7")
 
-
 /// add scrollView
       let scrollViewRect = CGRect(x: 0, y: 300, width: view.bounds.width, height: 200)
 
