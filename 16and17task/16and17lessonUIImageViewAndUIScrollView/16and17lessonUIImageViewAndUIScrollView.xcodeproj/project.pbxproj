@@ -16,6 +16,7 @@
 		09E140522A1788E3002E1A2D /* ForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E140512A1788E3002E1A2D /* ForYouViewController.swift */; };
 		09E140542A1B18FC002E1A2D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E140532A1B18FC002E1A2D /* SearchViewController.swift */; };
 		09E140562A1B1932002E1A2D /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E140552A1B1932002E1A2D /* ShoppingCartViewController.swift */; };
+		09F4D7382A298FE500058996 /* MyChoiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D7372A298FE500058996 /* MyChoiseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		09E140512A1788E3002E1A2D /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
 		09E140532A1B18FC002E1A2D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		09E140552A1B1932002E1A2D /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
+		09F4D7372A298FE500058996 /* MyChoiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChoiseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				09E140512A1788E3002E1A2D /* ForYouViewController.swift */,
 				09E140532A1B18FC002E1A2D /* SearchViewController.swift */,
 				09E140552A1B1932002E1A2D /* ShoppingCartViewController.swift */,
+				09F4D7372A298FE500058996 /* MyChoiseViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				09E140562A1B1932002E1A2D /* ShoppingCartViewController.swift in Sources */,
 				09E1403F2A178821002E1A2D /* ByeViewController.swift in Sources */,
 				09E1403B2A178821002E1A2D /* AppDelegate.swift in Sources */,
+				09F4D7382A298FE500058996 /* MyChoiseViewController.swift in Sources */,
 				09E1403D2A178821002E1A2D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
