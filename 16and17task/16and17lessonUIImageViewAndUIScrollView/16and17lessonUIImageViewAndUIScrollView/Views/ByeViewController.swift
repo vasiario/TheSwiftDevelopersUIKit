@@ -7,16 +7,17 @@
 
 import UIKit
 
+
 final class ByeViewController: UIViewController {
-
-  var centralTextLabel = UILabel()
-
+  
+  private var centralTextLabel = UILabel()
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-
-
+    
     addCentralTextLabel()
-
+    
   }
   fileprivate func addCentralTextLabel() {
     centralTextLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 100))
@@ -27,4 +28,3 @@ final class ByeViewController: UIViewController {
     view.addSubview(centralTextLabel)
   }
 }
-
