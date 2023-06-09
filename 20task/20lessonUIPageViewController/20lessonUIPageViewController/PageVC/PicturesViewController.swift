@@ -33,7 +33,7 @@ class PicturesViewController: UIViewController {
     button.backgroundColor = .black
     button.layer.cornerRadius = 25
      button.setTitle("Продолжить", for: .normal)
-     button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+    button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
      button.translatesAutoresizingMaskIntoConstraints = false
      return button
    }()
@@ -75,7 +75,9 @@ class PicturesViewController: UIViewController {
   }
 
   @objc private func buttonTapped() {
-      print("pressed")
+      let vc = ViewController()
+    self.navigationController?.pushViewController(vc, animated: true)
+
     }
 //MARK: - init
 

@@ -15,6 +15,7 @@
 		0980A22E2A30424E000EDD40 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0980A22D2A30424E000EDD40 /* PageViewController.swift */; };
 		0980A2332A304DD9000EDD40 /* PicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0980A2322A304DD9000EDD40 /* PicturesViewController.swift */; };
 		0980A2352A305195000EDD40 /* PicturesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0980A2342A305195000EDD40 /* PicturesHelper.swift */; };
+		0980A2372A32E9E1000EDD40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0980A2362A32E9E1000EDD40 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0980A22D2A30424E000EDD40 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		0980A2322A304DD9000EDD40 /* PicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesViewController.swift; sourceTree = "<group>"; };
 		0980A2342A305195000EDD40 /* PicturesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesHelper.swift; sourceTree = "<group>"; };
+		0980A2362A32E9E1000EDD40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				0980A22D2A30424E000EDD40 /* PageViewController.swift */,
 				0980A2322A304DD9000EDD40 /* PicturesViewController.swift */,
 				0980A2342A305195000EDD40 /* PicturesHelper.swift */,
+				0980A2362A32E9E1000EDD40 /* ViewController.swift */,
 			);
 			path = PageVC;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0980A2372A32E9E1000EDD40 /* ViewController.swift in Sources */,
 				0980A21A2A3040CF000EDD40 /* AppDelegate.swift in Sources */,
 				0980A2332A304DD9000EDD40 /* PicturesViewController.swift in Sources */,
 				0980A21C2A3040CF000EDD40 /* SceneDelegate.swift in Sources */,
